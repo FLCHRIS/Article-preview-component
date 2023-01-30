@@ -3,58 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/index.css">
-  <link rel="stylesheet" href="./css/normalize.css">
-  <script defer src="./js/index.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Article preview component</title>
   </style>
 </head>
 <body>
   <main class="main">
-    <div class="main__card">
-      <div class="card-image">
-        <img src="./images/drawers.jpg" alt="drawers" class="card-img">
-      </div>
-      <div class="card__information">
-        <div class="card__data">
-          <h1 class="card-title">
-            Shift the overall look and feel by adding these wonderful touches to furniture in your home
-          </h1>
-          <p class="card-paragraph">
-            Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.
-          </p>
-        </div>
-        <div class="card__social">
-          <div class="social__ctas">
-            <p class="ctas-name">
-              Share
-            </p>
-            <a href="#" aria-label="Go to Facebook"><img src="./images/icon-facebook.svg" alt="" aria-disabled="true"></a>
-            <a href="#" aria-label="Go to Twitter"><img src="./images/icon-twitter.svg" alt="" aria-disabled="true"></a>
-            <a href="#" aria-label="Go to pinterest"><img src="./images/icon-pinterest.svg" alt="" aria-disabled="true"></a>
-          </div>
-          <div class="social__person">
-            <img src="./images/avatar-michelle.jpg" alt="avatar michelle" class="person-avatar">
-            <div class="person__data">
-              <h2 class="person-name">
+    <section class="main__card card">
+      <img src="./images/drawers.jpg" alt="" class="card__img animate__animated animate__zoomIn">
+      <div class="card__container">
+        <h1 class="card__title animate__animated animate__slideInDown">
+          Shit the overall look and feel by adding these wonderful touches to furniture in your home
+        </h1>
+        <p class="card__paragraph animate__animated animate__slideInUp">
+          Even been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I've got some simple tips to help you make any room feel complete.
+        </p>
+        <div class="card__information">
+          <div class="card__personalData">
+            <img src="./images/avatar-michelle.jpg" alt="avatar michelle" class="card__avatar animate__animated animate__rotateIn">
+            <div class="card__info">
+              <p class="card__name animate__animated animate__fadeInDown">
                 Michelle Appleton
-              </h2>
-              <p class="person-date">
+              </p>
+              <p class="card__date animate__animated animate__fadeInUp">
                 28 Jun 2020
               </p>
             </div>
           </div>
-          <button aria-label="Show red social" class="social-button">
-            <img src="./images/icon-share.svg" alt="" aria-disabled="true">
+          <button class="card__button animate__animated animate__rotateIn" aria-label="Show social media">
+            <img src="./images/icon-share.svg" alt="">
           </button>
         </div>
+        <div class="card__socialMedia">
+          <p>
+            Share
+          </p>
+          <a href="#" aria-label="Go to facebook">
+            <img src="./images/icon-facebook.svg" alt="facebook">
+          </a>
+          <a href="#" aria-label="Go to twitter">
+            <img src="./images/icon-twitter.svg" alt="twitter">
+          </a>
+          <a href="#" aria-label="Go to pinterest">
+            <img src="./images/icon-pinterest.svg" alt="pinterest">
+          </a>
+        </div>
       </div>
-    </div>
+    </section>
   </main>
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. <br>
-    Coded by <a href="https://github.com/FLCHRIS">FLCHRIS</a>.
-  </footer>
+  <script src="./js/index.js"></script>
 </body>
 </html>
